@@ -4,6 +4,14 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
+data class Result(
+    @SerialName("result")
+    val result: List<Post>,
+    @SerialName("totalCount")
+    val totalCount: Long
+)
+
+@Serializable
 data class Post (
 
     @SerialName("id")

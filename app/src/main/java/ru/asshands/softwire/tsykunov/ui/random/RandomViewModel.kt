@@ -1,4 +1,4 @@
-package ru.asshands.softwire.tsykunov.ui.start
+package ru.asshands.softwire.tsykunov.ui.random
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -12,11 +12,10 @@ import ru.asshands.softwire.tsykunov.models.Post
 import ru.asshands.softwire.tsykunov.database.Repository
 import ru.asshands.softwire.tsykunov.services.RetrofitModule
 import ru.asshands.softwire.tsykunov.utils.ArrowBehavior
-import ru.asshands.softwire.tsykunov.utils.toLog
 import java.io.IOException
 import java.net.UnknownHostException
 
-class StartViewModel(
+class RandomViewModel(
     private val repository: Repository // TODO History in the future
 ) : ViewModel() {
 
