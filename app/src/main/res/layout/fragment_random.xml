@@ -6,35 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/main_background">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/fragment_start_tab_layout"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@color/dard_background"
-        app:tabTextColor="@color/text_light_grey_2"
-        app:tabSelectedTextColor="@color/design_default_color_secondary"/>
-
-
-    
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/fragment_start_view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_start_tab_layout"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-<!--    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/fragment_start_view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_start_tab_layout"
-        app:layout_constraintBottom_toBottomOf="parent"/>-->
-
-   <!-- <ImageView
-        android:id="@+id/fragment_start_image_container"
+    <ImageView
+        android:id="@+id/fragment_random_image_container"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -43,29 +16,30 @@
         tools:src="@tools:sample/backgrounds/scenic"/>
 
     <TextView
-        android:id="@+id/fragment_start_desc"
+        android:id="@+id/fragment_random_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_start_image_container"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_random_image_container"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/text_light_grey_2"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         tools:text="Описание" />
 
-&lt;!&ndash;    <TextView
-        android:id="@+id/fragment_start_id"
+<!--    <TextView
+        android:id="@+id/fragment_random_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_start_desc"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_random_desc"
         android:textColor="@color/text_light_grey_2"
         android:layout_marginStart="8dp"
-        tools:text="042042042" />&ndash;&gt;
+        tools:text="042042042" />-->
 
     <ImageView
-        android:id="@+id/fragment_start_arrow_back"
+        android:id="@+id/fragment_random_arrow_back"
         android:layout_width="72dp"
         android:layout_height="72dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +52,7 @@
 
 
     <ImageView
-        android:id="@+id/fragment_start_arrow_forward"
+        android:id="@+id/fragment_random_arrow_forward"
         android:layout_width="72dp"
         android:layout_height="72dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,15 +62,15 @@
         android:src="@drawable/ic_baseline_arrow_forward_24"/>
 
     <ProgressBar
-        android:id="@+id/fragment_start_progress_bar"
+        android:id="@+id/fragment_random_progress_bar"
         style="?android:attr/progressBarStyleLarge"
         android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/fragment_start_image_container"
-        app:layout_constraintEnd_toEndOf="@+id/fragment_start_image_container"
-        app:layout_constraintStart_toStartOf="@+id/fragment_start_image_container"
-        app:layout_constraintTop_toTopOf="@+id/fragment_start_image_container" />-->
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_random_image_container"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_random_image_container"
+        app:layout_constraintStart_toStartOf="@+id/fragment_random_image_container"
+        app:layout_constraintTop_toTopOf="@+id/fragment_random_image_container" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

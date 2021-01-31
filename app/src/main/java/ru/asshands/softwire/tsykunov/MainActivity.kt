@@ -3,6 +3,7 @@ package ru.asshands.softwire.tsykunov
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ru.asshands.softwire.tsykunov.databinding.ActivityMainBinding
+import ru.asshands.softwire.tsykunov.ui.latest.LatestFragment
 import ru.asshands.softwire.tsykunov.ui.start.StartFragment
 
 class MainActivity : AppCompatActivity() {
